@@ -150,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/robin-heijmans.github.io"
+baseurl: "https://robin-heijmans.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
