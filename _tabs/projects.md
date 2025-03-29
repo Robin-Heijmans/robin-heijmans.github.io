@@ -5,4 +5,105 @@ icon: fas fa-archive
 order: 2
 ---
 
-- [Kaboom: Return of Kaboom](/projects/kaboom-return-of-kaboom/)
+<style>
+
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background: var(--card-bg-dark);
+    color: var(--text-color-dark);
+  }
+
+  .project-card h3 {
+    background: transparent;
+    color : black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .project-card {
+    background: var(--card-bg-light);
+    color: var(--text-color-light);
+  }
+
+  .project-card h3 {
+    background: transparent;
+    color : white;
+  }
+}
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card-wrapper {
+    width: 300px;
+    position: relative; /* Enables absolute positioning for child elements */
+  }
+
+  .project-card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    position: relative;
+  }
+
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .project-card h3 {
+    margin: 0;
+    padding: 15px;
+    background: transparent; 
+    color: inherit;
+  }
+
+  /* Invisible link overlay that covers the whole card */
+  .card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+</style>
+
+<div class="projects-container">
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
+      <h3>Kaboom: Return of Kaboom</h3>
+      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a> <!-- Transparent Link -->
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
+      <h3>Kaboom: Return of Kaboom</h3>
+      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a> <!-- Transparent Link -->
+    </div>
+  </div>
+<!--
+  <a href="/projects/yet-another-project" class="project-card">
+    <div class="card-content">
+      <img src="assets/yet_another_project.jpg" alt="Yet Another Project">
+      <h3>Yet Another Project</h3>
+    </div>
+  </a>
+  -->
+</div>
