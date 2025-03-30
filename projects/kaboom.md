@@ -28,6 +28,16 @@ Below are some of the features I worked on:
 
 ## NN for pathfinding of enemy NPC airplanes and bombers
 
+<video width="720" controls>
+  <source src="/assets/videos/trained_NN_airplanes.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Interactions between the player and enemy NPC airplanes and bombers
+
+<video width="720" controls>
+  <source src="/assets/videos/airplanes_interaction.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Patrol behaviour for enemy NPC airplanes and bombers

@@ -15,15 +15,15 @@ I am a second-year Programming student at Breda University of Applied Sciences (
 <div class="projects-container">
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/fontys_nexus.png" alt="fontys">
+      <img src="assets/images/fontys_nexus.png" alt="fontys">
       <h3>Fontys Hogescholen - Applied Mathematics Bachelor's Degree</h3> 
       <h3>2018 - 2022</h3>
     </div>
   </div>
-  
+
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/FMI_improvia.png" alt="FMI">
+      <img src="assets/images/FMI_improvia.png" alt="FMI">
       <h3>FMI ImProvia - Data Scientist</h3> 
       <h3>2022 - 2023</h3>
     </div>
@@ -31,7 +31,7 @@ I am a second-year Programming student at Breda University of Applied Sciences (
   
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/buas.png" alt="buas">
+      <img src="assets/images/buas.png" alt="buas">
       <h3>Breda University of Applied Sciences - Game Technologies Bachelor's Degree</h3> 
       <h3>2023 - Present</h3>
     </div>
