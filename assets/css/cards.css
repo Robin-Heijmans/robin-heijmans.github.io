@@ -37,6 +37,12 @@
   position: relative; /* Enables absolute positioning for child elements */
 }
 
+@media (max-width: 640px) {
+  .card-wrapper {
+    max-width: 100%;
+  }
+}
+
 .project-card {
   width: 100%;
   display: flex;
