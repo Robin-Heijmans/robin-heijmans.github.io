@@ -13,23 +13,31 @@ order: 2
     <div class="project-card">
       <img src="assets/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
       <h3>Kaboom: Return of Kaboom</h3>
-      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a> <!-- Transparent Link -->
+      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a>
     </div>
   </div>
 
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
-      <h3>Kaboom: Return of Kaboom</h3>
-      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a> <!-- Transparent Link -->
+      <img src="assets/car_engine.png" alt="Racing engine">
+      <h3>Racing engine</h3>
+      <a href="/projects/racing-engine" class="card-link"></a>
     </div>
   </div>
-<!--
-  <a href="/projects/yet-another-project" class="project-card">
-    <div class="card-content">
-      <img src="assets/yet_another_project.jpg" alt="Yet Another Project">
-      <h3>Yet Another Project</h3>
+
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/Snakerobot.png" alt="Snakerobot">
+      <h3>Snakerobot</h3>
+      <a href="/projects/snakerobot" class="card-link"></a>
     </div>
-  </a>
-  -->
+  </div>
+
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/GPU_puzzles_puzzle14a.png" alt="GEMM">
+      <h3>Building a matrix-multiplication kernel from scratch using CUDA</h3>
+      <a href="/projects/matrix-multiplication-CUDA" class="card-link"></a>
+    </div>
+  </div>
 </div>

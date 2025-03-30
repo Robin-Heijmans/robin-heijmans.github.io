@@ -69,10 +69,18 @@
 }
 
 .project-card h3 {
-  margin: 0;
   padding: 15px;
   background: transparent;
   color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 10px 0;
 }
 
 /* Invisible link overlay that covers the whole card */
