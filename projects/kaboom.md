@@ -32,20 +32,30 @@ Below are some of the features I worked on:
 
 ## NN for pathfinding of enemy NPC airplanes and bombers
 
+One of the biggest features of the gameplay loop are the enemy NPC airplanes that defend the factories the player is attacking. It was my job to make the pathfollowing of these airplanes, I decided to do this using NNs because it was a research topic I could choose and it seemed quite interesting. To train the NN, I made a training environment in which the airplanes were trained by making them fly towards the center. You can see the trained NN in action, in the video below. No matter on where the airplanes are spawned, they will start moving towards the center and start circling around it. The green lines are the lines of sight of the airplanes, which is to check if the player is in front of them (it doesn't do anything in the training environment). They can be used to see the direction in which the airplanes are flying.
+
 <div class="video-container">
   <video controls>
     <source src="/assets/videos/trained_NN_airplanes.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <figcaption>
+    This video is a showcase of a trained NN controlling multiple airplanes and making them fly towards the center to start circling their target.
+  </figcaption>
 </div>
 
 ## Interactions between the player and enemy NPC airplanes and bombers
+
+
 
 <div class="video-container">
   <video controls>
     <source src="/assets/videos/airplanes_interaction.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <figcaption>
+    This video is shows the interaction between the player and enemy NPC airplanes. You can see that the airplanes circle the player, sometimes aligning their line of sight to shoot at the player.
+  </figcaption>
 </div>
 
 ## Patrol behaviour for enemy NPC airplanes and bombers
