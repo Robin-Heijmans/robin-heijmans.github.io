@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+  color: inherit; /* Keeps the text color the same as normal text */
+  font-weight: bold;
+}
+
+/* Optional: Change color when hovering over the link */
+a:hover {
+  color: #0077cc; /* Change to any color you like */
+}
