@@ -6,6 +6,7 @@ order: 2
 ---
 
 <link rel="stylesheet" href="/assets/css/cards.css">
+<link rel="stylesheet" href="/assets/css/cards_colors_about.css">
 
 <div class="projects-container">
   <div class="card-wrapper">
