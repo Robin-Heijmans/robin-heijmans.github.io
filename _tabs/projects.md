@@ -22,7 +22,7 @@ order: 2
       <img src="assets/images/Snakerobot.png" alt="Snakerobot">
       <h3>Snakerobot</h3>
       <!--<a href="/projects/snakerobot" class="card-link"></a>-->
-      <a href="//www.youtube.com/embed/USD3G57oHW8" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+      <a href="https://www.youtube.com/embed/USD3G57oHW8" target="_blank" rel="noopener noreferrer" class="card-link"></a>
       
     </div>
   </div>
