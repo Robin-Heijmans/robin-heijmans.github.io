@@ -30,7 +30,7 @@ order: 2
   <div class="card-wrapper">
     <div class="project-card">
       <img src="assets/images/GPU_puzzles_puzzle14a.png" alt="GEMM">
-      <h3>Building a matrix-multiplication kernel from scratch using CUDA</h3>
+      <h3>Matrix-multiplication from scratch using CUDA</h3>
       <a href="/projects/matrix-multiplication-CUDA" class="card-link"></a>
     </div>
   </div>
