@@ -57,14 +57,47 @@ With this component both the player and the AI can:
 - Switch gears;
 - Engage the starter (to get the engine running).
 
-The *possessed* variable is to indicate whether or not the vehicle is *possessed* by the player. If it is *possessed* by the player, then the player can control this vehicle with input. Otherwise if the vehicle entity is not *possessed* and contains a *racing agent* component, it will drive with the AI.
+The *possessed* variable is to indicate whether or not the vehicle is *possessed* by the player. If it is *possessed* by the player, then the player can control this vehicle with input. Otherwise if the vehicle entity is not *possessed* and contains a *racing agent* component, it will drive using the AI.
 
 ...
 
 # Blender-to-engine pipeline
-...
+One of the requirements of the project was to create a blender-to-engine pipeline that the artists and designers can use to create a racing game using our engine. I contributed to this pipeline by making add-ons that can be loaded in blender and used to set variables used in the engine. When loading in a level/scene these variables are used to create entities with the corresponding components. 
 
-Showcase of the blender-to-engine pipeline and hot-reloading:
+This add-on adds a custom properties window to the selected object in blenders object inspector. In this window, the user can use the checkboxes to mark an object for the desired component. Once checked it will open a drop-down window, in which you can set related variables for that component.
+
+<figure>
+  <img src="assets/images/racing-engine/blender-beetle-properties.png" alt="beelte-properties">
+  <figcaption>Properties in the object inspector that can be set for our racing engine (*beetle*).</figcaption>
+</figure>
+
+We also used the *gltf* file format for loading in levels and *.dds* for textures. When exporting a level/scene from blender we had to export it to *gltf* and changes the names of the textures to end in *.dds* from *.png* and *.jpg*. We also convert the textures to the right format using NVIDIA texture tools exporter. To simplify the steps necessary, I created an add-on that auto exports the blender level to *gltf*, convertes the textures and replaces the formats in the *gltf* to *dds*.
+
+<figure>
+  <img src="assets/images/racing-engine/blender-export-button.png" alt="export-button">
+  <figcaption>Add-on that adds an export button and file browser for auto-exporting to <i>gltf</i>.</figcaption>
+</figure>
+
+Loading the entities and components from blender is done using the following pseudo-code:
+
+```cpp
+for (auto [entity, extras] : Engine.ECS().Registry.view<GLTFExtras>().each())
+    {
+        if (physicsBody)
+            CreateJoltPhysicsBodyComponent();
+        if (vehicle) 
+            CreateVehicle(); // (using components for vehicle system)
+        if (trackNode)
+            CreateTrackNodeComponent();
+        if (race)
+            CreateRace(); // and add it to objective system
+        if (checkpoint)
+            CreateCheckpointComponent();
+    }
+```
+
+Below I have added a video showcasing the blender-to-engine pipeline and hot-reloading in-engine:
+
 <div class="youtube-video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/m3WC36fD0U8" frameborder="0" allowfullscreen></iframe>
 </div>

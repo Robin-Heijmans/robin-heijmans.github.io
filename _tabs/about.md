@@ -17,10 +17,10 @@ During my studies, I not only deepened my understanding of mathematics but also 
 <div class="projects-container">
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/images/fontys_nexus.png" alt="fontys">
-      <h3>Fontys Hogescholen - Applied Mathematics Bachelor's Degree</h3> 
-      <h3>2018 - 2022</h3>
-      <a href="https://www.fontys.nl/Studeren/Opleidingen/Toegepaste-Wiskunde-voltijd.htm" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+      <img src="assets/images/buas.png" alt="buas">
+      <h3>Breda University of Applied Sciences - Game Technologies Bachelor's Degree</h3> 
+      <h3>2023 - Present</h3>
+      <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target="_blank" rel="noopener noreferrer" class="card-link"></a>
     </div>
   </div>
 
@@ -35,10 +35,10 @@ During my studies, I not only deepened my understanding of mathematics but also 
   
   <div class="card-wrapper">
     <div class="project-card">
-      <img src="assets/images/buas.png" alt="buas">
-      <h3>Breda University of Applied Sciences - Game Technologies Bachelor's Degree</h3> 
-      <h3>2023 - Present</h3>
-      <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+      <img src="assets/images/fontys_nexus.png" alt="fontys">
+      <h3>Fontys Hogescholen - Applied Mathematics Bachelor's Degree</h3> 
+      <h3>2018 - 2022</h3>
+      <a href="https://www.fontys.nl/Studeren/Opleidingen/Toegepaste-Wiskunde-voltijd.htm" target="_blank" rel="noopener noreferrer" class="card-link"></a>
     </div>
   </div>
 </div>
