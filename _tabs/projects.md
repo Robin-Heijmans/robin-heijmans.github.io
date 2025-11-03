@@ -38,7 +38,23 @@ order: 2
       <img src="assets/images/Snakerobot.png" alt="Snakerobot">
       <h3>Snakerobot</h3>
       <!--<a href="/projects/snakerobot" class="card-link"></a>-->
-      <a href="https://www.youtube.com/embed/USD3G57oHW8" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+      <a href="https://www.youtube.com/watch?v=USD3G57oHW8" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/images/wanderland/wanderland-logo.png" alt="Wanderland">
+      <h3>Wanderland</h3>
+      <a href="/projects/wanderland" class="card-link"></a>
+    </div>
+  </div>
+
+  <div class="card-wrapper">
+    <div class="project-card">
+      <img src="assets/images/fluid-sim/thumbnail.png" alt="Particle Based Fluid Simulation">
+      <h3>Real-Time Particle Based Fluid Simulation</h3>
+      <a href="/projects/fluid-sim" class="card-link"></a>
     </div>
   </div>
 </div>

@@ -32,8 +32,9 @@
 }
 
 .card-wrapper {
-  width: 1 1 300px;
-  max-width: 31%;
+  width: 300px;
+  max-width: 33%;
+  min-width: 225px;
   position: relative; /* Enables absolute positioning for child elements */
 }
 

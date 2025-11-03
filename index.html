@@ -6,7 +6,10 @@ layout: page
   <head>
     <title>My Portfolio</title>
   </head>
+  <link rel="stylesheet" href="/assets/css/cards.css">
+  <link rel="stylesheet" href="/assets/css/cards_colors_about.css">
   <link rel="stylesheet" href="/assets/css/links.css">
+  <link rel="stylesheet" href="/assets/css/highlighted_projects.css">
   <body>
     <h1>Welcome to my Portfolio!</h1>
     <p>
@@ -24,5 +27,89 @@ layout: page
         one.
       </p>
     </ul>
+
+    <section class="highlighted-projects">
+      <h2>Highlighted Projects</h2>
+      <div class="slider-container">
+        <button class="slider-btn left">&#10094;</button>
+
+        <div class="slider">
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/fluid-sim/thumbnail.png" alt="Particle Based Fluid Simulation">
+              <h3>Real-Time Particle Based Fluid Simulation</h3>
+              <a href="/projects/fluid-sim" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/wanderland/wanderland-logo.png" alt="Wanderland">
+              <h3>Wanderland</h3>
+              <a href="/projects/wanderland" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
+              <h3>Kaboom: Return of Kaboom</h3>
+              <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/car_engine.png" alt="Racing engine">
+              <h3>Racing engine</h3>
+              <a href="/projects/racing-engine" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/GPU_puzzles_puzzle14a.png" alt="GEMM">
+              <h3>Matrix-multiplication from scratch using CUDA</h3>
+              <a href="/projects/matrix-multiplication-CUDA" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/car_engine.png" alt="Racing engine">
+              <h3>Racing engine</h3>
+              <a href="/projects/racing-engine" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
+              <h3>Kaboom: Return of Kaboom</h3>
+              <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/GPU_puzzles_puzzle14a.png" alt="GEMM">
+              <h3>Matrix-multiplication from scratch using CUDA</h3>
+              <a href="/projects/matrix-multiplication-CUDA" class="card-link"></a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+            <div class="project-card">
+              <img src="assets/images/car_engine.png" alt="Racing engine">
+              <h3>Racing engine</h3>
+              <a href="/projects/racing-engine" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <script src="/assets/js/buttons_event_listner.js"></script>
   </body>
 </html>
