@@ -19,7 +19,6 @@
   overflow-x: auto;
   scrollbar-width: none;
   flex-direction: row;
-  outline: 1px dashed red;
 }
 
 .slider::-webkit-scrollbar {
