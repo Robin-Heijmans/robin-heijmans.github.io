@@ -11,53 +11,52 @@ order: 2
 <section class="outlined-section">
 
 <div class="projects-container">
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/Kaboom_showcase.png" alt="Kaboom: Return of Kaboom">
-      <h3>Kaboom: Return of Kaboom</h3>
-      <a href="/projects/kaboom-return-of-kaboom" class="card-link"></a>
-    </div>
-  </div>
+  {% for project in site.data.projects %}
+    <div class="card-wrapper">
+      <div class="project-card">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <h3>{{ project.title }}</h3>
+        <a href="{{ project.link }}" class="card-link"></a>
 
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/car_engine.png" alt="Racing engine">
-      <h3>Racing engine</h3>
-      <a href="/projects/racing-engine" class="card-link"></a>
-    </div>
-  </div>
+        {% assign all_tags = project.tags | default: [] %}
 
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/GPU_puzzles_puzzle14a.png" alt="GEMM">
-      <h3>Matrix-multiplication from scratch using CUDA</h3>
-      <a href="/projects/matrix-multiplication-CUDA" class="card-link"></a>
-    </div>
-  </div>
+        {% if project.people %}
+          {% assign people_tag_text = "" %}
+          {% assign people_tag_color = "#fff" %}
+          {% assign people_tag_bg = "#6C63FF" %}
+          {% if project.people > 1 %}
+            {% assign people_tag_text = "👥 " | append: project.people %}
+          {% else %}
+            {% assign people_tag_text = "👤"| append: 1 %}
+          {% endif %}
+          {% assign all_tags = all_tags | push: people_tag_text %}
+        {% endif %}
 
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/Snakerobot.png" alt="Snakerobot">
-      <h3>Snakerobot</h3>
-      <!--<a href="/projects/snakerobot" class="card-link"></a>-->
-      <a href="https://www.youtube.com/watch?v=USD3G57oHW8" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-    </div>
-  </div>
+        {% if all_tags.size > 0 %}
+          <div class="tags">
+            {% for tag in all_tags %}
+              {% assign tag_data = site.data.tags[tag] %}
+              {% if tag_data %}
+                <span class="tag"
+                  style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};">
+                  {{ tag }}
+                </span>
+              {% else %}
+                {% if tag contains "👤" or tag contains "👥" %}
+                  <!-- People tag uses the default text color for consistency -->
+                  <span class="tag" style="color: #fff; background-color: #6C63FF;">
+                    {{ tag }}
+                  </span>
+                {% else %}
+                  <span class="tag">{{ tag }}</span>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
 
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/wanderland/wanderland-logo.png" alt="Wanderland">
-      <h3>Wanderland</h3>
-      <a href="/projects/wanderland" class="card-link"></a>
+      </div>
     </div>
-  </div>
-
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/fluid-sim/thumbnail.png" alt="Particle Based Fluid Simulation">
-      <h3>Real-Time Particle Based Fluid Simulation</h3>
-      <a href="/projects/fluid-sim" class="card-link"></a>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 </section>

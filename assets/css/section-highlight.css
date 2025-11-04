@@ -5,6 +5,7 @@
   background-color: transparent;
   transition: box-shadow 0.3s ease;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 main h1 {

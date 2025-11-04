@@ -20,36 +20,18 @@ During my studies, I not only deepened my understanding of mathematics but also 
 </section>
 
 <section class="outlined-section">
-<section class="highlighted-projects">
 <h2>My Background</h2>
 
 <div class="projects-container">
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/buas.png" alt="buas">
-      <h3>Breda University of Applied Sciences - Game Technologies Bachelor's Degree</h3> 
-      <h3>2023 - Present</h3>
-      <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target="_blank" rel="noopener noreferrer" class="card-link"></a>
+  {% for project in site.data.background %}
+    <div class="card-wrapper">
+      <div class="project-card">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <h3>{{ project.title }}</h3>
+        <h3>{{ project.period}}</h3>
+        <a href="{{ project.link }}"  target="_blank" rel="noopener noreferrer" class="card-link"></a>
+      </div>
     </div>
-  </div>
-
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/FMI_improvia.png" alt="FMI">
-      <h3>FMI ImProvia - Data Scientist</h3> 
-      <h3>2022 - 2023</h3>
-      <a href="https://www.improvia.nl/" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-    </div>
-  </div>
-  
-  <div class="card-wrapper">
-    <div class="project-card">
-      <img src="assets/images/fontys_nexus.png" alt="fontys">
-      <h3>Fontys Hogescholen - Applied Mathematics Bachelor's Degree</h3> 
-      <h3>2018 - 2022</h3>
-      <a href="https://www.fontys.nl/Studeren/Opleidingen/Toegepaste-Wiskunde-voltijd.htm" target="_blank" rel="noopener noreferrer" class="card-link"></a>
-    </div>
-  </div>
+  {% endfor %}
 </div>
-</section>
 </section>

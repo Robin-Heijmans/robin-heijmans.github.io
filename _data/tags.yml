@@ -1,0 +1,39 @@
+C++:
+  color: "#00599C"
+  text_color: "#fff"
+
+Python:
+  color: "#3776AB"
+  text_color: "#fff"
+
+GPU:
+  color: "#E67E22"
+  text_color: "#fff"
+
+UE5:
+  color: "#2D9BF0"
+  text_color: "#fff"
+
+Blueprinting:
+  color: "#00C853"
+  text_color: "#fff"
+
+Physics:
+  color: "#E53935"
+  text_color: "#fff"
+
+NN:
+  color: "#8E24AA"
+  text_color: "#fff"
+
+AI:
+  color: "##00B8D9"
+  text_color: "#fff"
+
+Blender:
+  color: "#E87D0D"
+  text_color: "#fff"
+
+Plugin:
+  color: "#009688"
+  text_color: "#fff"
