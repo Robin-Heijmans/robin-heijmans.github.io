@@ -24,6 +24,10 @@ order: 2
 
 <section class="outlined-section">
 
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>
+
 <div class="projects-container">
   {% for project in site.data.projects %}
     <div class="card-wrapper">

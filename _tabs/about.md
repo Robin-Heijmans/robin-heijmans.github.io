@@ -11,6 +11,10 @@ order: 1
 <link rel="stylesheet" href="/assets/css/highlighted_projects.css">
 <link rel="stylesheet" href="/assets/css/section-highlight.css">
 <section class="outlined-section">
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>
+
 <p>
 I am a second-year Programming student at Breda University of Applied Sciences (BUas) with a degree in Applied Mathematics. I have loved mathematics since high school, it just made sense to me in a way that other subjects didn’t. I enjoyed solving exercises and applying the rules we learned in class. So, after high school I chose to pursue a degree in mathematics, which led me to the Applied Mathematics study at Fontys. 
 </p>

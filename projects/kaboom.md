@@ -8,6 +8,10 @@ permalink: /projects/kaboom-return-of-kaboom/
 <link rel="stylesheet" href="/assets/css/videos.css">
 <link rel="stylesheet" href="/assets/css/images.css">
 
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>
+
 This project took 8 weeks, during which I worked in a team together with 11 other games students. The team consisted of 3 designers, 5 artists and 4 programmers, all from Breda University of Applied Sciences. The focus of the project was on teamwork and collaboration.
 
 The game was made using Unreal Engine and we used the agile scrum method to manage the project. You can check out our itch.io page and download/play the game using the following link: <a href="https://buas.itch.io/team-ginger" target="_blank" rel="noopener noreferrer">Kaboom: Return of Kaboom</a>.

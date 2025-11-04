@@ -8,6 +8,10 @@ permalink: /projects/racing-engine/
 <link rel="stylesheet" href="/assets/css/videos.css">
 <link rel="stylesheet" href="/assets/css/images.css">
 
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>
+
 This project took 8 weeks, during which I worked in a team consisting of 6 programming students total. 
 
 The racing engine was made using a snapshot of the *bee engine*, which is a educational engine made and updated by the 2nd year programming teachers of Breda University of Applied Sciences. It had basic entity component system (ECS) functionality setup, among other things. It was our task to turn this into a racing engine with a blender-to-engine pipeline that can easily be used by artists and designers to make a racing game.

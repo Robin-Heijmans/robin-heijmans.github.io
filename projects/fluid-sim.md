@@ -9,4 +9,6 @@ permalink: /projects/fluid-sim/
 <link rel="stylesheet" href="/assets/css/videos.css">
 <link rel="stylesheet" href="/assets/css/images.css">
 
-# Particle Based Fluid Simulation
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>

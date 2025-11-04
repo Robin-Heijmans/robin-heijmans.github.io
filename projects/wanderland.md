@@ -9,4 +9,6 @@ permalink: /projects/wanderland/
 <link rel="stylesheet" href="/assets/css/videos.css">
 <link rel="stylesheet" href="/assets/css/images.css">
 
-# Wanderland
+<h1 class="dynamic-title">
+  {{ page.title }}
+</h1>
