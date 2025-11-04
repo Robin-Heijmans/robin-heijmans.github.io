@@ -1,0 +1,16 @@
+.outlined-section {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+main h1 {
+  margin-top: 0rem;
+}
+
+main h2 {
+  margin: 0rem 0 1.25rem;
+}

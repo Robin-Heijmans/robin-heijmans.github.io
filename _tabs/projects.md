@@ -7,6 +7,8 @@ order: 2
 
 <link rel="stylesheet" href="/assets/css/cards.css">
 <link rel="stylesheet" href="/assets/css/cards_colors_about.css">
+<link rel="stylesheet" href="/assets/css/section-highlight.css">
+<section class="outlined-section">
 
 <div class="projects-container">
   <div class="card-wrapper">
@@ -58,3 +60,4 @@ order: 2
     </div>
   </div>
 </div>
+</section>

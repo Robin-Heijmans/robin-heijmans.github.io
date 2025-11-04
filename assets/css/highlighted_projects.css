@@ -25,10 +25,6 @@
   display: none;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
 .slider-btn {
   position: absolute;
   top: 50%;
