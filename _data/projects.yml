@@ -31,7 +31,7 @@
   short_description: "Racing engine made with realistic vehicle physics and blender pipeline."
 
 - title: "Matrix-multiplication from scratch using CUDA"
-  image: "assets/images/GEMM/GPU_puzzles_puzzle14a.png"
+  image: "assets/images/gemm/GPU_puzzles_puzzle14a.png"
   link: "/projects/matrix-multiplication-CUDA"
   tags: [C++, GPU, NN]
   people: 1
