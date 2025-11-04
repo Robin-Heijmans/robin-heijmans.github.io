@@ -8,12 +8,26 @@ order: 2
 <link rel="stylesheet" href="/assets/css/cards.css">
 <link rel="stylesheet" href="/assets/css/cards_colors_about.css">
 <link rel="stylesheet" href="/assets/css/section-highlight.css">
+<link rel="stylesheet" href="/assets/css/filter_button.css">
+
+<div class="project-filter-dropdown">
+  <button id="filter-toggle">Filter ▼</button>
+  <div id="filter-menu" class="filter-menu" style="display: none;">
+    {% for tag in site.data.tags %}
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="{{ tag[0] }}">
+        {{ tag[0] }}
+      </label>
+    {% endfor %}
+  </div>
+</div>
+
 <section class="outlined-section">
 
 <div class="projects-container">
   {% for project in site.data.projects %}
     <div class="card-wrapper">
-      <div class="project-card">
+      <div class="project-card" data-tags="{{ project.tags | join: ',' }}">
         <img src="{{ project.image }}" alt="{{ project.title }}">
         <h3>{{ project.title }}</h3>
         <a href="{{ project.link }}" class="card-link"></a>
@@ -60,3 +74,4 @@ order: 2
   {% endfor %}
 </div>
 </section>
+<script src="/assets/js/filter_tags_event_listner.js"></script>

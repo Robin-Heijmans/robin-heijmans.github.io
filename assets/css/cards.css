@@ -84,6 +84,10 @@
   margin: 10px 0;
 }
 
+.project-card p {
+  color: inherit;
+}
+
 /* Invisible link overlay that covers the whole card */
 .card-link {
   position: absolute;

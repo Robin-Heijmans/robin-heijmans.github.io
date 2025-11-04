@@ -25,7 +25,7 @@
 - title: "Racing Engine"
   image: "assets/images/racing-engine/thumbnail.png"
   link: "/projects/racing-engine"
-  tags: [C++, Python, GPU, Blender, Physics, Plugin]
+  tags: [C++, Python, GPU, Blender, Physics, Plugin, AI]
   people: 6
   highlighted: true
   short_description: "Racing engine made with realistic vehicle physics and blender pipeline."
@@ -33,7 +33,7 @@
 - title: "Matrix-multiplication from scratch using CUDA"
   image: "assets/images/gemm/GPU_puzzles_puzzle14a.png"
   link: "/projects/matrix-multiplication-CUDA"
-  tags: [C++, GPU, NN]
+  tags: [C++, GPU, NN, AI]
   people: 1
   highlighted: true
   short_description: "Learning how to properly utilize the GPU with compute shaders for maximum performance."
@@ -41,7 +41,7 @@
 - title: "Snake Inspection Robot"
   image: "assets/images/Snakerobot/thumbnail.png"
   link: "https://www.youtube.com/watch?v=USD3G57oHW8"
-  tags: [Python, NN, Physics]
+  tags: [Python, NN, Physics, AI]
   people: 1
   highlighted: false
   short_description: "Inspection robot in the form of a snake, to move through pipes and measure the quality of the inside of the pipes."
