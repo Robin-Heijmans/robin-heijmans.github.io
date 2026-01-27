@@ -56,6 +56,10 @@
     filter: blur(12px);
     opacity: 0.8;
   }
+
+  a {
+    border-bottom: none !important;
+  }
 }
 
 .project-card > * {
@@ -105,9 +109,4 @@
 
 .container {
   max-width: 100% !important;
-}
-
-.post-tail-wrapper .post-meta a,
-.content a:not(.img-link) {
-  border-bottom: none !important;
 }

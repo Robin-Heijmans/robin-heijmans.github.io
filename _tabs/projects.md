@@ -47,7 +47,7 @@ order: 2
             {% else %}
               {% assign people_tag_text = "👤"| append: 1 %}
             {% endif %}
-            {% assign all_tags = all_tags | push: people_tag_text %}
+            {% assign all_tags = all_tags | unshift: people_tag_text %}
           {% endif %}
 
           {% if all_tags.size > 0 %}

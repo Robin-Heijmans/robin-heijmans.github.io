@@ -63,3 +63,9 @@ body {
 .mode-switch {
   display: none !important;
 }
+
+.content a:not(.img-link):hover {
+  color: neon.$neon-purple !important;
+  border-bottom: 1px neon.$neon-purple;
+  text-decoration: none;
+}
