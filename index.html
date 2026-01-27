@@ -7,95 +7,98 @@ layout: page
     <title>My Portfolio</title>
   </head>
   <link rel="stylesheet" href="/assets/css/cards.css">
-  <link rel="stylesheet" href="/assets/css/cards_colors_about.css">
   <link rel="stylesheet" href="/assets/css/links.css">
   <link rel="stylesheet" href="/assets/css/highlighted_projects.css">
   <link rel="stylesheet" href="/assets/css/section-highlight.css">
   <body>
-    <section class="outlined-section">
-      <h1>Welcome to my Portfolio!</h1>
-      <p>
-        Hello, I'm Robin Heijmans, a Games Programming student at Breda University of Applied Sciences. Here you'll find
-        a bit about who I am, what drives me, and some of the projects I have worked on. I have added a short
-        descirption to the different tabs you can find, to help navigate my protfolio:
-      </p>
-      <ul>
+    <section class="outlined-section-wrapper">
+      <section class="outlined-section">
+        <h1>Welcome to my Portfolio!</h1>
         <p>
-          <a href="/about/"><strong>About:</strong></a> you will learn more about my background, skills and hobbies.
+          Hello, I'm Robin Heijmans, a Games Programming student at Breda University of Applied Sciences. Here you'll
+          find a bit about who I am, what drives me, and some of the projects I have worked on. I have added a short
+          descirption to the different tabs you can find, to help navigate my protfolio:
         </p>
+        <ul>
+          <p>
+            <a href="/about/"><strong>About:</strong></a> you will learn more about my background, skills and hobbies.
+          </p>
 
-        <p>
-          <a href="/projects/"><strong>Projects:</strong></a> here you can check out some of the projects I have worked
-          one.
-        </p>
-      </ul>
+          <p>
+            <a href="/projects/"><strong>Projects:</strong></a> here you can check out some of the projects I have
+            worked one.
+          </p>
+        </ul>
+      </section>
     </section>
 
-    <section class="outlined-section">
-      <section class="highlighted-projects">
-        <h2>Highlighted Projects</h2>
-        <div class="slider-container">
-          <button class="slider-btn left">&#10094;</button>
+    <section class="outlined-section-wrapper">
+      <section class="outlined-section">
+        <section class="highlighted-projects">
+          <h2>Highlighted Projects</h2>
+          <div class="slider-container">
+            <button class="slider-btn left">&#10094;</button>
 
-          <div class="slider">
-            {% for project in site.data.projects %}
-              {% if project.highlighted %}
-                <div class="card-wrapper">
-                  <div class="project-card">
-                    <img src="{{ project.image }}" alt="{{ project.title }}">
-                    <h3>{{ project.title }}</h3>
+            <div class="slider">
+              {% for project in site.data.projects %}
+                {% if project.highlighted %}
+                  <div class="card-wrapper">
+                    <div class="project-card">
+                      <img src="{{ project.image }}" alt="{{ project.title }}">
+                      <h3>{{ project.title }}</h3>
 
-                    {% assign all_tags = project.tags | default: [] %}
+                      {% assign all_tags = project.tags | default: [] %}
 
-                    {% if project.people %}
-                      {% assign people_tag_text = '' %}
-                      {% assign people_tag_color = '#fff' %}
-                      {% assign people_tag_bg = '#6C63FF' %}
-                      {% if project.people > 1 %}
-                        {% assign people_tag_text = '👥 ' | append: project.people %}
-                      {% else %}
-                        {% assign people_tag_text = '👤' | append: 1 %}
+                      {% if project.people %}
+                        {% assign people_tag_text = '' %}
+                        {% assign people_tag_color = '#fff' %}
+                        {% assign people_tag_bg = '#6C63FF' %}
+                        {% if project.people > 1 %}
+                          {% assign people_tag_text = '👥 ' | append: project.people %}
+                        {% else %}
+                          {% assign people_tag_text = '👤' | append: 1 %}
+                        {% endif %}
+                        {% assign all_tags = all_tags | push: people_tag_text %}
                       {% endif %}
-                      {% assign all_tags = all_tags | push: people_tag_text %}
-                    {% endif %}
 
-                    {% if all_tags.size > 0 %}
-                      <div class="tags">
-                        {% for tag in all_tags %}
-                          {% assign tag_data = site.data.tags[tag] %}
-                          {% if tag_data %}
-                            <span
-                              class="tag"
-                              style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};"
-                            >
-                              {{ tag }}
-                            </span>
-                          {% else %}
-                            {% if tag contains '👤' or tag contains '👥' %}
-                              <!-- People tag uses the default text color for consistency -->
-                              <span class="tag" style="color: #fff; background-color: #6C63FF;">
+                      {% if all_tags.size > 0 %}
+                        <div class="tags">
+                          {% for tag in all_tags %}
+                            {% assign tag_data = site.data.tags[tag] %}
+                            {% if tag_data %}
+                              <span
+                                class="tag"
+                                style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};"
+                              >
                                 {{ tag }}
                               </span>
                             {% else %}
-                              <span class="tag">{{ tag }}</span>
+                              {% if tag contains '👤' or tag contains '👥' %}
+                                <!-- People tag uses the default text color for consistency -->
+                                <span class="tag" style="color: #fff; background-color: #6C63FF;">
+                                  {{ tag }}
+                                </span>
+                              {% else %}
+                                <span class="tag">{{ tag }}</span>
+                              {% endif %}
                             {% endif %}
-                          {% endif %}
-                        {% endfor %}
-                      </div>
-                    {% endif %}
+                          {% endfor %}
+                        </div>
+                      {% endif %}
 
-                    {% if project.short_description %}
-                      <p>{{ project.short_description }}</p>
-                    {% endif %}
-                    <a href="{{ project.link }}" class="card-link"></a>
+                      {% if project.short_description %}
+                        <p>{{ project.short_description }}</p>
+                      {% endif %}
+                      <a href="{{ project.link }}" class="card-link"></a>
+                    </div>
                   </div>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
+                {% endif %}
+              {% endfor %}
+            </div>
 
-          <button class="slider-btn right">&#10095;</button>
-        </div>
+            <button class="slider-btn right">&#10095;</button>
+          </div>
+        </section>
       </section>
     </section>
 

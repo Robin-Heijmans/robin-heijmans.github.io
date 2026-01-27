@@ -1,26 +1,7 @@
-@media (prefers-color-scheme: dark) {
-  .project-card {
-    background: var(--card-bg-dark);
-    color: var(--text-color-dark);
-  }
+---
+---
 
-  .project-card h3 {
-    background: transparent;
-    color: black;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .project-card {
-    background: var(--card-bg-light);
-    color: var(--text-color-light);
-  }
-
-  .project-card h3 {
-    background: transparent;
-    color: white;
-  }
-}
+@use 'neon-colors' as neon;
 
 .projects-container {
   display: flex;
@@ -53,9 +34,33 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s, color 0.3s;
   text-align: center;
   position: relative;
+  color: neon.$text-color;
+  background: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: inherit;
+    z-index: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(neon.$neon-cyan, 0.5),
+      rgba(neon.$neon-purple, 0.5)
+    );
+    filter: blur(12px);
+    opacity: 0.8;
+  }
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .project-card:hover {
@@ -100,4 +105,9 @@
 
 .container {
   max-width: 100% !important;
+}
+
+.post-tail-wrapper .post-meta a,
+.content a:not(.img-link) {
+  border-bottom: none !important;
 }
