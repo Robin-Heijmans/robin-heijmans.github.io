@@ -16,33 +16,30 @@ layout: page
       <h2 class="section-title">Highlighted Projects</h2>
     </div>
     <section class="featured-projects-grid">
-    {% for project in site.data.projects %}
-      {% if project.highlighted %}
-        <section class="outlined-card-wrapper">
+      {% for project in site.data.projects %}
+        {% if project.highlighted %}
+          <section class="outlined-card-wrapper">
+            <article class="outlined-card featured-project card">
+              <section class="card-section">
+                <div class="featured-media">
+                  <img src="{{ project.image }}" alt="{{ project.title }}">
+                </div>
 
-          <article class="outlined-card featured-project card">
-            <section class="card-section">
-          <div class="featured-media">
-            <img src="{{ project.image }}" alt="{{ project.title }}">
-          </div>
-
-          <!-- Text content -->
-          <div class="featured-content">
-            <h3>{{ project.title }}</h3>
-            <ul>
-              {% for item in project.points %}
-                <li>{{ item }}</li>
-              {% endfor %}
-            </ul>
-            <a href="{{ project.link }}" class="read-more-btn">
-              Read more →
-            </a>
-            </section>
-          </article>
-
-        </section>
-      {% endif %}
-    {% endfor %}
-  </section>
+                <!-- Text content -->
+                <div class="featured-content">
+                  <h3>{{ project.title }}</h3>
+                  <ul>
+                    {% for item in project.points %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                  <a href="{{ project.link }}" class="read-more-btn"> Read more → </a>
+                </div>
+              </section>
+            </article>
+          </section>
+        {% endif %}
+      {% endfor %}
+    </section>
   </body>
 </html>
