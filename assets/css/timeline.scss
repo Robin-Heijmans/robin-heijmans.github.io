@@ -1,0 +1,80 @@
+---
+---
+
+@use 'neon-colors' as neon;
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+    transform: none;
+  }
+
+  .timeline-item {
+    justify-content: flex-start !important;
+    padding-left: 2rem;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+
+  .timeline-item::before {
+    left: 12px;
+    transform: none;
+  }
+}
+
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, neon.$neon-cyan, neon.$neon-purple);
+  }
+}
+
+.timeline-content {
+  max-width: 33%;
+  min-width: 300px;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .timeline-content {
+    max-width: 100%;
+  }
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: neon.$neon-cyan;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px neon.$neon-cyan;
+}

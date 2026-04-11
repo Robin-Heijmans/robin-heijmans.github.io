@@ -1,0 +1,31 @@
+@use 'neon-colors' as neon;
+
+%outlined-base {
+  background-color: neon.$bg-color;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 1rem;
+}
+
+%outlined-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, neon.$neon-cyan, neon.$neon-purple);
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  box-shadow:
+    -3px -3px 12px neon.$neon-cyan,
+    3px 3px 12px neon.$neon-purple;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}

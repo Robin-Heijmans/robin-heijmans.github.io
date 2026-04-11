@@ -16,14 +16,14 @@ timezone: Europe/Amsterdam
 
 title: Robin Heijmans # the main title
 
-tagline: Games Programming student at Breday University of Applied Sciences | Mathematical Engineer # it will display as the subtitle
+tagline: Games Programmer | Mathematical Engineer # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Portfolio of Robin Heijmans, showcasing projects I have contributed to.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://robin-heijmans.github.io"
+url: "https://robin-heijmans.dev/"
 
 github:
   username: Robin-Heijmans # change to your GitHub username

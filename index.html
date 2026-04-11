@@ -8,97 +8,41 @@ layout: page
   </head>
   <link rel="stylesheet" href="/assets/css/cards.css">
   <link rel="stylesheet" href="/assets/css/links.css">
-  <link rel="stylesheet" href="/assets/css/highlighted_projects.css">
   <link rel="stylesheet" href="/assets/css/section-highlight.css">
   <link rel="stylesheet" href="/assets/css/featured_project.css">
+
   <body>
-    <section class="outlined-section-wrapper">
-      <section class="outlined-section">
-        <h1>Welcome to my Portfolio!</h1>
-        <p>
-          Hello, I'm Robin Heijmans, a Games Programming student at Breda University of Applied Sciences. Here you'll
-          find a bit about who I am, what drives me, and some of the projects I have worked on. I have added a short
-          descirption to the different tabs you can find, to help navigate my protfolio:
-        </p>
-        <ul>
-          <p>
-            <a href="/about/"><strong>About:</strong></a> you will learn more about my background, skills and hobbies.
-          </p>
-
-          <p>
-            <a href="/projects/"><strong>Projects:</strong></a> here you can check out some of the projects I have
-            worked one.
-          </p>
-        </ul>
-      </section>
-    </section>
-
     <div class="section-title-wrapper">
       <h2 class="section-title">Highlighted Projects</h2>
     </div>
+    <section class="featured-projects-grid">
     {% for project in site.data.projects %}
       {% if project.highlighted %}
-        <section class="outlined-section-wrapper">
-          <section class="outlined-section">
-            <article class="featured-project {{ project.highlighted_layout | default: 'image-left' }}">
-              <!-- Image + tags -->
-              <div class="featured-media">
-              <img src="{{ project.image }}" alt="{{ project.title }}">
+        <section class="outlined-card-wrapper">
 
+          <article class="outlined-card featured-project card">
+            <section class="card-section">
+          <div class="featured-media">
+            <img src="{{ project.image }}" alt="{{ project.title }}">
+          </div>
 
-              {% assign all_tags = project.tags | default: [] %}
+          <!-- Text content -->
+          <div class="featured-content">
+            <h3>{{ project.title }}</h3>
+            <ul>
+              {% for item in project.points %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+            <a href="{{ project.link }}" class="read-more-btn">
+              Read more →
+            </a>
+            </section>
+          </article>
 
-              {% if project.people %}
-                {% assign people_tag_text = '' %}
-                {% assign people_tag_color = '#fff' %}
-                {% assign people_tag_bg = '#6C63FF' %}
-                {% if project.people > 1 %}
-                  {% assign people_tag_text = '👥 ' | append: project.people %}
-                {% else %}
-                  {% assign people_tag_text = '👤' | append: 1 %}
-                {% endif %}
-                {% assign all_tags = all_tags | unshift: people_tag_text %}
-              {% endif %}
-
-              {% if all_tags.size > 0 %}
-                <div class="tags">
-                  {% for tag in all_tags %}
-                    {% assign tag_data = site.data.tags[tag] %}
-                    {% if tag_data %}
-                      <span
-                        class="tag"
-                        style="background-color: {{ tag_data.color }}; color: {{ tag_data.text_color }};"
-                      >
-                        {{ tag }}
-                      </span>
-                    {% else %}
-                      {% if tag contains '👤' or tag contains '👥' %}
-                        <!-- People tag uses the default text color for consistency -->
-                        <span class="tag" style="color: #fff; background-color: #6C63FF;">
-                          {{ tag }}
-                        </span>
-                      {% else %}
-                        <span class="tag">{{ tag }}</span>
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              {% endif %}
-            </div>
-
-            <!-- Text content -->
-            <div class="featured-content">
-              <h3>{{ project.title }}</h3>
-              {% if project.short_description %}
-                <p>{{ project.short_description }}</p>
-              {% endif %}
-              <a href="{{ project.link }}" class="read-more-btn">
-                Read more →
-              </a>
-            </article>
-          </section>
         </section>
       {% endif %}
     {% endfor %}
+  </section>
   </body>
 </html>

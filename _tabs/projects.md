@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Projects
-icon: fas fa-archive
+icon: fas fa-code
 order: 2
 ---
 
 <link rel="stylesheet" href="/assets/css/cards.css">
 <link rel="stylesheet" href="/assets/css/section-highlight.css">
 <link rel="stylesheet" href="/assets/css/filter_button.css">
+
+<div class="section-title-wrapper">
+  <h2 class="section-title">Projects</h2>
+</div>
+
 
 <div class="project-filter-dropdown">
   <button id="filter-toggle">Filter ▼</button>
@@ -23,10 +28,6 @@ order: 2
 
 <section class="outlined-section-wrapper">
   <section class="outlined-section">
-
-  <h1 class="dynamic-title">
-    {{ page.title }}
-  </h1>
 
   <div class="projects-container">
     {% for project in site.data.projects %}

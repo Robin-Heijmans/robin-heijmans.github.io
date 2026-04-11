@@ -2,36 +2,17 @@
 ---
 
 @use 'neon-colors' as neon;
+@use 'outline-base';
 
 .outlined-section {
-  background-color: neon.$bg-color;
-  text-align: center;
+  @extend %outlined-base;
   min-height: 210px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  display: inline-block;
   width: 100%;
-  padding: 1rem;
 }
 
 .outlined-section-wrapper {
-  border-radius: 16px;
-  padding: 2px;
-  background: linear-gradient(135deg, neon.$neon-cyan, neon.$neon-purple);
-  display: flex;
+  @extend %outlined-wrapper;
   width: 100%;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
-
-  box-shadow:
-    -3px -3px 12px neon.$neon-cyan,
-    3px 3px 12px neon.$neon-purple;
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
 }
 
 main h1 {
