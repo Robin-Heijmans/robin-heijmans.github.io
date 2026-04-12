@@ -4,11 +4,9 @@ title: "Wanderland"
 permalink: /projects/wanderland/
 ---
 
-<link rel="stylesheet" href="/assets/css/links.css">
-<link rel="stylesheet" href="/assets/css/table.css">
-<link rel="stylesheet" href="/assets/css/videos.css">
-<link rel="stylesheet" href="/assets/css/images.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/section-highlight.css">
 
-<h1 class="dynamic-title">
-  {{ page.title }}
-</h1>
+<div class="section-title-wrapper">
+  <h2 class="section-title">{{ page.title }}</h2>
+</div>

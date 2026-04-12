@@ -4,13 +4,12 @@ title: "Racing engine"
 permalink: /projects/racing-engine/
 ---
 
-<link rel="stylesheet" href="/assets/css/links.css">
-<link rel="stylesheet" href="/assets/css/videos.css">
-<link rel="stylesheet" href="/assets/css/images.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/section-highlight.css">
 
-<h1 class="dynamic-title">
-  {{ page.title }}
-</h1>
+<div class="section-title-wrapper">
+  <h2 class="section-title">{{ page.title }}</h2>
+</div>
 
 This project took 8 weeks, during which I worked in a team consisting of 6 programming students total. 
 

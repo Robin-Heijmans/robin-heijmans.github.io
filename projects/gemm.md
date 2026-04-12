@@ -1,17 +1,15 @@
 ---
 layout: page
-title: "Building a matrix-multiplication kernel from scratch using CUDA and applying it to Neural Networks"
+title: "CUDA Matrix-multiplication"
 permalink: /projects/matrix-multiplication-CUDA/
 ---
 
-<link rel="stylesheet" href="/assets/css/links.css">
-<link rel="stylesheet" href="/assets/css/table.css">
-<link rel="stylesheet" href="/assets/css/videos.css">
-<link rel="stylesheet" href="/assets/css/images.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/section-highlight.css">
 
-<h1 class="dynamic-title">
-  {{ page.title }}
-</h1>
+<div class="section-title-wrapper">
+  <h2 class="section-title">{{ page.title }}</h2>
+</div>
 
 This project took 8 weeks, during which I had to do research into a topic of my choosing and make an accessible API for using the result in different projects. I have also published an <a href="https://medium.com/@robinheijmans/building-a-matrix-multiplication-kernel-from-scratch-using-cuda-and-applying-it-to-neural-networks-8da95a296de5" target="_blank" rel="noopener noreferrer">article</a> of this research. 
 

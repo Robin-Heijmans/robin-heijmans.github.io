@@ -9,6 +9,7 @@
     - Artificial intelligence
     - Neural networks
     - Enemy behaviour
+    - Blueprinting
 
 - title: "Particle Based Fluid Simulation"
   image: "assets/images/fluid-sim/thumbnail.png"
@@ -21,6 +22,7 @@
     - Physics
     - Real-time
     - GPU
+    - UE plugin
 
 - title: "Wanderland"
   image: "assets/images/wanderland/wanderland-logo.png"
@@ -60,7 +62,7 @@
 
 - title: "Snake Inspection Robot"
   image: "assets/images/Snakerobot/thumbnail.png"
-  link: "https://www.youtube.com/watch?v=USD3G57oHW8"
+  link: "/projects/snakerobot"
   tags: [Python, NN, Physics, AI]
   people: 1
   highlighted: false

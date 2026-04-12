@@ -7,7 +7,7 @@ order: 2
 
 <link rel="stylesheet" href="/assets/css/cards.css">
 <link rel="stylesheet" href="/assets/css/section-highlight.css">
-<link rel="stylesheet" href="/assets/css/filter_button.css">
+<link rel="stylesheet" href="/assets/css/media.css">
 
 <div class="section-title-wrapper">
   <h2 class="section-title">Projects</h2>

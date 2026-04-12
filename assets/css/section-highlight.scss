@@ -4,6 +4,8 @@
 @use 'neon-colors' as neon;
 @use 'outline-base';
 
+/* Outlined section */
+
 .outlined-section {
   @extend %outlined-base;
   min-height: 210px;
@@ -58,4 +60,82 @@ main h2 {
   text-align: center;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/* Content section */
+
+@media (max-width: 768px) {
+  .feature-block {
+    flex-direction: column !important;
+    gap: 1.5rem;
+  }
+}
+
+.feature-block {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  margin: 2rem 0;
+
+  &.media-right {
+    flex-direction: row-reverse;
+  }
+}
+
+.feature-media {
+  flex: 1 1 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img,
+  video {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
+
+.feature-content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+  min-width: 0;
+
+  h3 {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  p {
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+.feature-block.media-small .feature-media {
+  flex: 0.8;
+}
+
+.feature-block.media-large .feature-media {
+  flex: 1.5;
+}
+
+.feature-block.fixed-height .feature-media {
+  height: 300px;
+
+  img,
+  video {
+    height: 100%;
+  }
 }

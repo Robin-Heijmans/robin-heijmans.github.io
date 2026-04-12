@@ -5,8 +5,7 @@ icon: fas fa-user
 order: 3
 ---
 
-<link rel="stylesheet" href="/assets/css/cards.css">
-<link rel="stylesheet" href="/assets/css/links.css">
+<link rel="stylesheet" href="/assets/css/media.css">
 <link rel="stylesheet" href="/assets/css/section-highlight.css">
 
 <div class="section-title-wrapper">
