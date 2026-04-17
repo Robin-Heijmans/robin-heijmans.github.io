@@ -10,6 +10,7 @@
     - Neural networks
     - Enemy behaviour
     - Blueprinting
+    - Unreal engine
 
 - title: "Particle Based Fluid Simulation"
   image: "assets/images/fluid-sim/thumbnail.png"
@@ -19,10 +20,10 @@
   highlighted: true
   short_description: "Interactive real-time particle based fluid simulation."
   points:
-    - Physics
-    - Real-time
-    - GPU
-    - UE plugin
+    - Real-time physics
+    - Navier-Stokes fluid simulation
+    - C++ & GPU
+    - Unreal engine plugin
 
 - title: "Wanderland"
   image: "assets/images/wanderland/wanderland-logo.png"
@@ -35,6 +36,7 @@
     - XR stage
     - Behaviour trees
     - Boss attacks
+    - Unreal engine
 
 - title: "Racing Engine"
   image: "assets/images/racing-engine/thumbnail.png"
