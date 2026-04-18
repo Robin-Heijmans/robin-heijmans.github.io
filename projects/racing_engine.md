@@ -11,6 +11,28 @@ permalink: /projects/racing-engine/
   <h2 class="section-title">{{ page.title }}</h2>
 </div>
 
+<section class="outlined-section-wrapper">
+  <section class="outlined-section">
+      <div class="feature-media">
+        <div class="youtube-video-container">
+          <iframe src="https://www.youtube.com/embed/m3WC36fD0U8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="feature-content">
+        <h3><b>My Contribution</b></h3>
+        <ul>
+          <li>Connection between the actions of the NPC cars and the realistic vehicle system</li>
+          <li>Creating the behaviour for the NPC cars</li>
+          <li>Creating a custom blender add-on for setting up the level and exporting it for our engine</li>
+          <li>Hot reloading for editor mode in our engine</li>
+        </ul>
+        <p>
+          The racing engine was made using a snapshot of the <i>bee engine</i>, which is an educational C++ engine made and updated by the 2nd year programming teachers of Breda University of Applied Sciences. It had basic entity component system (ECS) functionality setup, among other things. I worked in a team consisting of 6 programming students total. It was our task to turn this into a racing engine with a blender-to-engine pipeline that can easily be used by artists and designers to make a racing game.
+        </p>
+      </div>
+  </section>
+</section>
+
 This project took 8 weeks, during which I worked in a team consisting of 6 programming students total. 
 
 The racing engine was made using a snapshot of the *bee engine*, which is a educational engine made and updated by the 2nd year programming teachers of Breda University of Applied Sciences. It had basic entity component system (ECS) functionality setup, among other things. It was our task to turn this into a racing engine with a blender-to-engine pipeline that can easily be used by artists and designers to make a racing game.

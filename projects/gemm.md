@@ -11,6 +11,29 @@ permalink: /projects/matrix-multiplication-CUDA/
   <h2 class="section-title">{{ page.title }}</h2>
 </div>
 
+<section class="outlined-section-wrapper">
+  <section class="outlined-section">
+      <div class="feature-media">
+        <div class="youtube-video-container">
+          <iframe src="https://www.youtube.com/embed/hxwUSdSztdM" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="feature-content">
+        <h3><b>My Contribution</b></h3>
+        <ul>
+          <li>Neural network (NN) trained for number recognition</li>
+          <li>Writing feedforward and backpropogation kernels in CUDA</li>
+          <li>GPU implementation of NN logic using CUDA kernels</li>
+          <li>Optimization of GPU kernels</li>
+          <li>Profiling using NSight Compute</li>
+        </ul>
+        <p>
+          You can check out a blogpost I made on this project using the following link: <a href="https://medium.com/@robinheijmans/building-a-matrix-multiplication-kernel-from-scratch-using-cuda-and-applying-it-to-neural-networks-8da95a296de5" target="_blank" rel="noopener noreferrer">building a matrix-multiplication kernel from scratch using CUDA and applying it to neural networks</a>. This project was made in <b>custom engine</b>, where the engine is C++ and the CUDA kernels use hlsl for the compute shaders.
+        </p>
+      </div>
+  </section>
+</section>
+
 This project took 8 weeks, during which I had to do research into a topic of my choosing and make an accessible API for using the result in different projects. I have also published an <a href="https://medium.com/@robinheijmans/building-a-matrix-multiplication-kernel-from-scratch-using-cuda-and-applying-it-to-neural-networks-8da95a296de5" target="_blank" rel="noopener noreferrer">article</a> of this research. 
 
 In the past I have done quite some projects regarding neural networks (NN). Most of the time I made use of PyTorch or Tensorflow, but I have also made Neural Network classes myself. I made them myself to deepen my understanding of them, but never used the GPU to do it. Before this research project I had not used the GPU for much, other than for a couple of OpenGL shaders. Over the last couple of weeks I decided to change that and build a general matrix multiplications kernel (GEMM) on the GPU using CUDA.

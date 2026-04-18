@@ -22,6 +22,7 @@
   points:
     - Real-time physics
     - Navier-Stokes fluid simulation
+    - Collision detection and resolution
     - C++ & GPU
     - Unreal engine plugin
 
