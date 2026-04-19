@@ -19,7 +19,7 @@ permalink: /projects/fluid-sim/
         </div>
       </div>
       <div class="feature-content">
-        <h3><b>My Contribution</b></h3>
+        <h3><b>My Work</b></h3>
         <ul>
           <li>Implementation of complex Navier-Stokes physics equations</li>
           <li>Improving performance with spatial lookup</li>

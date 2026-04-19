@@ -19,7 +19,7 @@ permalink: /projects/kaboom-return-of-kaboom/
         </div>
       </div>
       <div class="feature-content">
-        <h3><b>My Contribution</b></h3>
+        <h3><b>My Work</b></h3>
         <ul>
           <li>Neural network (NN) trained for pathfinding of enemy NPC airplanes</li>
           <li>Interactions between the player and enemy NPC airplanes</li>

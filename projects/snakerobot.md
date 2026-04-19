@@ -19,7 +19,7 @@ permalink: /projects/snakerobot/
         </div>
       </div>
       <div class="feature-content">
-        <h3><b>My Contribution</b></h3>
+        <h3><b>My Work</b></h3>
         <ul>
           <li>Neural network (NN) trained automatic maneuvering of the Snakerobot through obstacles</li>
           <li>Python simulation with PyBullet</li>

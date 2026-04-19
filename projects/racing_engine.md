@@ -19,7 +19,7 @@ permalink: /projects/racing-engine/
         </div>
       </div>
       <div class="feature-content">
-        <h3><b>My Contribution</b></h3>
+        <h3><b>My Work</b></h3>
         <ul>
           <li>Connection between the actions of the NPC cars and the realistic vehicle system</li>
           <li>Creating the behaviour for the NPC cars</li>
