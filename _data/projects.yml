@@ -26,18 +26,19 @@
     - C++ & GPU
     - Unreal engine plugin
 
-- title: "Wanderland"
-  image: "assets/images/wanderland/wanderland-logo.png"
-  link: "/projects/wanderland"
-  tags: [UE5, Blueprinting, AI]
-  people: 19
+- title: "CUDA Matrix-multiplication"
+  image: "assets/images/gemm/number-recognition.png"
+  link: "/projects/matrix-multiplication-CUDA"
+  tags: [C++, GPU, NN, AI]
+  people: 1
   highlighted: true
-  short_description: "An innovative game made for the XR stage."
+  short_description: "Learning how to properly utilize the GPU with compute shaders for maximum performance."
   points:
-    - XR stage
-    - Behaviour trees
-    - Boss attacks
-    - Unreal engine
+    - GPU profiling
+    - CPU vs GPU
+    - Optimization
+    - Computational and memory load
+    - CUDA
 
 - title: "Racing Engine"
   image: "assets/images/racing-engine/thumbnail.png"
@@ -51,17 +52,18 @@
     - Blender pipeline intergation
     - NPC car behaviour
 
-- title: "CUDA Matrix-multiplication"
-  image: "assets/images/gemm/GPU_puzzles_puzzle14a.png"
-  link: "/projects/matrix-multiplication-CUDA"
-  tags: [C++, GPU, NN, AI]
-  people: 1
+- title: "Wanderland"
+  image: "assets/images/wanderland/wanderland-logo.png"
+  link: "/projects/wanderland"
+  tags: [UE5, Blueprinting, AI]
+  people: 19
   highlighted: false
-  short_description: "Learning how to properly utilize the GPU with compute shaders for maximum performance."
+  short_description: "An innovative game made for the XR stage."
   points:
-    - Neural networks
-    - GPU
-    - Optimization
+    - XR stage
+    - Behaviour trees
+    - Boss attacks
+    - Unreal engine
 
 - title: "Snake Inspection Robot"
   image: "assets/images/Snakerobot/thumbnail.png"
